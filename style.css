@@ -107,9 +107,7 @@ h2::before {
 
 /* Contact */
 .contact {
-    margin-top: 3rem;
-    border-top: 1px solid #991b1b;
-    padding-top: 2rem;
+    margin-top: 0;
 }
 
 .contact p {
