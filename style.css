@@ -140,6 +140,11 @@ h2::before {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     border-radius: 2px;
+    position: relative;
+}
+
+.work-list li:has(a.title) {
+    cursor: pointer;
 }
 
 .work-list li:hover {
@@ -166,6 +171,13 @@ h2::before {
 a.title {
     color: var(--link);
     transition: color 0.2s ease;
+}
+
+a.title::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 a.title:hover {
